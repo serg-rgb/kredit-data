@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-04-28",
+  "version": 1,
+  "taxDeduction220": {
+    "purchaseBaseLimit": 2000000,
+    "purchaseRefundMax": 260000,
+    "interestBaseLimit": 3000000,
+    "interestRefundMax": 390000,
+    "appliesFromDate": "2014-01-01",
+    "noteBefore2014": "Для договоров до 01.01.2014 — без лимита по процентам.",
+    "source": "https://www.consultant.ru/document/cons_doc_LAW_28165/62f621e5835790398a88f80270fe2cf0b3710b3c/"
+  },
+  "taxDeduction219": {
+    "education": {
+      "selfYearlyLimit": 150000,
+      "childrenYearlyLimit": 110000,
+      "note": "С 2024 года. Возврат 13% от лимита."
+    }
+  },
+  "ndflBrackets2026": [
+    {"upTo": 2400000, "rate": 0.13},
+    {"upTo": 5000000, "rate": 0.15},
+    {"upTo": 20000000, "rate": 0.18},
+    {"upTo": 50000000, "rate": 0.20},
+    {"upTo": null, "rate": 0.22}
+  ],
+  "depositTax214_2": {
+    "formula": "necessaryThreshold = 1 000 000 × max(keyRate за год)",
+    "rate": 0.13,
+    "rateAboveBracket": 0.15,
+    "paymentDueDate": "До 1 декабря следующего года",
+    "source": "https://www.kommersant.ru/doc/8336830"
+  },
+  "matkapital2026": {
+    "firstChild": 728921.90,
+    "secondChildSupplement": 234321.27,
+    "secondChildIfNoFirst": 963243.17,
+    "indexationFromDate": "2026-02-01",
+    "indexationPercent": 5.6
+  },
+  "preferentialPrograms": {
+    "family": {
+      "active": true,
+      "validUntil": "2030-12-31",
+      "maxRate": 6.0,
+      "maxLoanMoscowSpb": 12000000,
+      "maxLoanRegions": 6000000,
+      "minDownPaymentPercent": 20,
+      "maxTermMonths": 360,
+      "since2026Notes": "С 01.02.2026: один льготный кредит на семью; супруги — обязательные созаёмщики."
+    },
+    "it": {
+      "active": true,
+      "validUntil": "2030-12-31",
+      "maxRate": 6.0,
+      "maxLoanMoscowSpb": null,
+      "maxLoanRegions": 9000000,
+      "minDownPaymentPercent": 20,
+      "maxTermMonths": 360,
+      "maxAge": 50,
+      "minMonthlyIncome": 150000,
+      "requiresAccreditedItCompany": true
+    },
+    "fareast": {
+      "active": true,
+      "validUntil": null,
+      "maxRate": 2.0,
+      "maxLoanMoscowSpb": null,
+      "maxLoanRegions": 6000000,
+      "maxLoanLargeArea": 9000000,
+      "largeAreaThresholdM2": 60,
+      "minDownPaymentPercent": 20,
+      "maxTermMonths": 240
+    },
+    "rural": {
+      "active": true,
+      "validUntil": null,
+      "maxRate": 3.0,
+      "borderTerritoriesRate": 0.1,
+      "maxLoanRegions": 6000000,
+      "minDownPaymentPercent": 20,
+      "maxTermMonths": 300,
+      "settlementMaxPopulation": 30000
+    },
+    "military": {
+      "active": true,
+      "validUntil": null,
+      "isNIS": true,
+      "maxLoan": 2200000,
+      "maxTermMonths": 300,
+      "minDownPaymentPercent": 0
+    }
+  },
+  "insuranceCoolingOff": {
+    "voluntaryDays": 30,
+    "voluntaryDaysSinceDate": "2024-01-21",
+    "mandatoryPropertyApplies": false,
+    "law": "ст. 11.1 ФЗ-353"
+  },
+  "earlyRepayment": {
+    "noticePeriodDays": 30,
+    "noFineLaw": "ч. 6 ст. 11 ФЗ-353",
+    "interestUntilActualPaymentDate": true
+  },
+  "mortgageHolidays": {
+    "law": "ст. 6.1-1 ФЗ-353",
+    "maxMonths": 6,
+    "incomeDropThresholdPercent": 30,
+    "loanLimit": 15000000,
+    "singleHomeRequired": true,
+    "oneTimeOnly": true
+  },
+  "changelog": [
+    {
+      "date": "2026-04-28",
+      "what": "Initial dataset assembled from open sources as of 2026-04-28."
+    },
+    {
+      "date": "2026-02-01",
+      "what": "Маткапитал проиндексирован на 5,6%."
+    },
+    {
+      "date": "2026-02-01",
+      "what": "Семейная ипотека: один льготный кредит на семью; супруги обязаны быть созаёмщиками."
+    },
+    {
+      "date": "2025-01-01",
+      "what": "Введена прогрессивная шкала НДФЛ: 13/15/18/20/22% (ФЗ № 176-ФЗ)."
+    }
+  ]
+}

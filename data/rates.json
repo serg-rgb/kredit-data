@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-04-28",
+  "source": "https://www.cbr.ru/hd_base/keyrate/ + https://www.cbr.ru/statistics/avgprocstav/",
+  "cb": {
+    "keyRate": 14.5,
+    "keyRateMaxThisYear": 16.0,
+    "nextDecisionDate": "2026-06-19"
+  },
+  "deposits": {
+    "averageTop10MaxRate": 13.425,
+    "marketBest3m": 17.0,
+    "marketBest6m": 16.0,
+    "marketBest1y": 14.5,
+    "taxFreeThresholdYearly": 160000,
+    "taxFreeThresholdNote": "1 000 000 ₽ × max(ключ. ставка ЦБ за 2026 = 16%) = 160 000 ₽"
+  },
+  "mortgage": {
+    "secondaryAvg": 19.98,
+    "newBuildingAvg": 21.25,
+    "preferential": {
+      "family": {
+        "rate": 6.0,
+        "active": true
+      },
+      "it": {
+        "rate": 6.0,
+        "active": true,
+        "note": "С 2026 ставка 6% (была 5% до изменения)"
+      },
+      "fareast": {
+        "rate": 2.0,
+        "rateNoLifeInsurance": 3.0,
+        "active": true
+      },
+      "rural": {
+        "rate": 3.0,
+        "rateBorderTerritories": 0.1,
+        "active": true
+      },
+      "military": {
+        "isNIS": true,
+        "yearlyContribution": 411184.9,
+        "monthlyContribution": 34265.41
+      }
+    }
+  }
+}

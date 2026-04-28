@@ -1,0 +1,39 @@
+name: Update rates from cbr.ru
+
+on:
+  schedule:
+    # Каждый понедельник в 09:00 МСК (06:00 UTC)
+    - cron: '0 6 * * MON'
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Update rates.json
+        run: python scripts/update_rates.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'kredit-bot'
+          git config user.email 'kredit-bot@users.noreply.github.com'
+          if ! git diff --quiet -- data/rates.json; then
+            git add data/rates.json
+            git commit -m "rates: автообновление $(date -I)"
+            git push
+          else
+            echo "rates.json unchanged — nothing to commit"
+          fi
