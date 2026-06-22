@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-04-28",
+  "updatedAt": "2026-06-22",
   "source": "https://www.cbr.ru/hd_base/keyrate/ + https://www.cbr.ru/statistics/avgprocstav/",
   "cb": {
-    "keyRate": 14.5,
+    "keyRate": 14.25,
     "keyRateMaxThisYear": 16.0,
     "nextDecisionDate": "2026-06-19"
   },
